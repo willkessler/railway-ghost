@@ -6,7 +6,7 @@
   "author": "farazpatankar",
   "license": "MIT",
   "engines": {
-    "node": "16.X"
+    "node": "^14.17.0 || ^16.13.0 || ^18.0.0"
   },
   "dependencies": {
     "casper": "github:TryGhost/Casper#main",
@@ -14,6 +14,10 @@
     "ghost-storage-cloudinary": "2.2.1",
     "lyra": "github:TryGhost/lyra#main",
     "mysql2": "2.3.3"
+  },
+  "resolutions": {
+    "jsdom": "16.6.0",
+    "@elastic/elasticsearch" : "16.6.0"
   },
   "scripts": {
     "start": "bin/create-config && node index.js",
